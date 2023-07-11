@@ -128,13 +128,14 @@
         */
       console.log("---ES4---");
 
-      const changeUrls = function () {
-        const allURLs = document.querySelector("a");
+      /* const changeUrls = function () {
+      const allURLs = document.querySelector("a");
         const newAttr = a.setAttribute("https://www.google.com");
         return newAttr;
       };
 
-      changeUrls();
+      changeUrls(); 
+      */
 
       /* ESERCIZIO 5
          Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
@@ -145,6 +146,8 @@
       const addToTheSecond = function () {
         const thisList = document.getElementById("secondList");
         const newElement = document.createElement("li");
+        newElement.innerText("4th");
+        thisList.appendChild(newElement);
 
         return console.log(thisList);
       };
